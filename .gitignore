@@ -1,0 +1,13 @@
+# ide/editor specific files
+.idea/
+.DS_Store
+
+# test files
+.coverage
+htmlcov/
+
+
+**/__pycache__/
+*.pyc
+
+.ipynb_checkpoints/
