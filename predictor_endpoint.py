@@ -5,6 +5,10 @@ from pydantic import BaseModel
 from dataset_preparation import clean_and_lemmatize
 from models import LSTMModel
 import spacy
+from spacy.cli import download
+
+download("en_core_web_sm")
+
 
 tokenizer = BertTokenizer.from_pretrained('./bert-tokenizer')
 lstm_model = LSTMModel(vocab_size=tokenizer.vocab_size,
